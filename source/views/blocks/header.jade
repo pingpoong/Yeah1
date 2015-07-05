@@ -1,0 +1,80 @@
+header.tn-header-full
+  .tn-header.scroll-to-fixed-fixed
+    .tn-menuhead
+      .tn-logo
+        +img-link('http://static.yeah1.com/yeah1.v3//Home/images/logo_home.png', 'Yeah1.com - Trang chủ', 'Yeah1 Logo')(width="90")
+      form#frm_search.navbar-form(role='search', name='frm_search', action='http://www.google.com.vn', target='_blank')
+        .form-group
+          input(type='hidden', name='cx', value='partner-pub-6071525676516988:6231887758')
+          input(type='hidden', name='ie', value='UTF-8')
+          input.form-control(type='text', name='q', placeholder='Tìm kiếm với Yeah1')
+        button.btn.btn-default(type='submit')
+      ul.tn-menuhead-ul
+        li.first: +link('Yeah1.com', 'http://yeah1.com', 'Trang chủ')
+        li
+          +link('Sao')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('Xì-ta Việt')
+              li: +link('US - UK')
+              li.last: +link('Asia')
+        li.active
+          +link('Sống trẻ')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('Hot boys')
+              li: +link('Hot girls')
+              li: +link('Phóng sự nhân vật')
+              li: +link('Giới trẻ "Phượt"')
+              li: +link('Ăn chơi')
+              li.last: +link('Chuyện lạ')
+        li
+          +link('Thời trang')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('Street style')
+              li: +link('Xu hướng')
+              li: +link('Bộ sưu tập')
+              li: +link('Thời trang sao')
+              li: +link('Làm đẹp')
+              li.last: +link('Baby style')
+        li
+          +link('Phim')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('US-UK')
+              li: +link('Asia')
+              li: +link('Phim Việt')
+              li.last: +link('Phim chiếu rạp')
+        li
+          +link('Nhạc')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('US-UK')
+              li: +link('Asia')
+              li.last: +link('V-Pop')
+        li
+          +link('Yêu')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('Tips yêu')
+              li: +link('Horoscope')
+              li: +link('Nhắn gửi yêu thương')
+              li: +link('Chiếc hộp giới tính')
+              li.last: +link('Thư viện sách')
+        li
+          +link('Sách')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('Sách mới')
+              li: +link('Chân dung tác giả')
+              li: +link('Tủ sách Yeah1')
+              li.last: +link('Yeah1 blog')
+        li
+          +link('Yeah1')
+          .tn-menuhead-sub
+            ul.tn-menuhead-ulsub
+              li.first: +link('Yeah1 TV')
+              li.last: +link('Yeah1 Family')
+        li.last
+          +link('Video').active
